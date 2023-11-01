@@ -1,0 +1,10 @@
+D:\PTPMUDTM\DoAnCuoiMon\BLL_DAL\bin\Debug\BLL_DAL.dll
+D:\PTPMUDTM\DoAnCuoiMon\BLL_DAL\bin\Debug\BLL_DAL.pdb
+D:\PTPMUDTM\DoAnCuoiMon\BLL_DAL\obj\Debug\BLL_DAL.csproj.AssemblyReference.cache
+D:\PTPMUDTM\DoAnCuoiMon\BLL_DAL\obj\Debug\BLL_DAL.csproj.CoreCompileInputs.cache
+D:\PTPMUDTM\DoAnCuoiMon\BLL_DAL\obj\Debug\BLL_DAL.dll
+D:\PTPMUDTM\DoAnCuoiMon\BLL_DAL\obj\Debug\BLL_DAL.pdb
+D:\PTPMUDTM\DoAnCuoiMon\BLL_DAL\bin\Debug\BLL_DAL.dll.config
+D:\PTPMUDTM\DoAnCuoiMon\BLL_DAL\bin\Debug\BCrypt.Net.dll
+D:\PTPMUDTM\DoAnCuoiMon\BLL_DAL\bin\Debug\BCrypt.Net.xml
+D:\PTPMUDTM\DoAnCuoiMon\BLL_DAL\obj\Debug\BLL_DAL.csproj.CopyComplete
