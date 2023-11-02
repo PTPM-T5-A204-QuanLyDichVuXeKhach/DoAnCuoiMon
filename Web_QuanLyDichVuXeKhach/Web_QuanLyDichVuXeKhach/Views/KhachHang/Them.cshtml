@@ -1,0 +1,41 @@
+﻿@model Web_QuanLyDichVuXeKhach.Models.Xe
+@{
+    ViewBag.Title = "Them";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<h2>Them</h2>
+
+<form action="/khachhang/them" method="post">
+    <div class="row">
+        <div class="col-md-6">
+            <label for="Ten">Tên khách hàng</label>
+            <input type="text" class="form-control" id="TenKH" name="TenKH" placeholder="Họ và tên" />
+        </div>
+        <div class="col-md-6">
+            <label for="SĐT">Số điện thoại</label>
+            <input type="tel" class="form-control" id="SDT" name="SDT" placeholder="SĐT" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <label for="Email">Email</label>
+            <input type="email" class="form-control" id="Email" name="Email" placeholder="Email" />
+        </div>
+        <div class="col-md-6">
+            <label for="Mã xe">Mã xe</label>
+            @*<select class="form-control" id="MaXe" name="MaXe">
+                <option value="">Chọn mã xe</option>
+                @foreach(var xe in ViewBag.Xe)
+            {
+                <option value="@xe.MaXe">
+                    @xe.MaXe
+                </option>
+            }
+            </select>*@
+            <input type="number" class="form-control" id="MaXe" name="MaXe" placeholder="Mã xe" />
+        </div>
+    </div>
+    <button type="submit" class="btn btn-outline-primary">Save</button>
+    <a href="/xe/index" class="btn btn-outline-danger">Cancel</a>
+</form>

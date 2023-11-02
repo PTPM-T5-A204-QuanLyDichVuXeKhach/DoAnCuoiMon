@@ -1,0 +1,30 @@
+﻿@model Web_QuanLyDichVuXeKhach.Models.Xe
+
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<h2>Detail Xe</h2>
+
+<div class="row">
+    <div class="col-4">
+        <img src="~/image/@Model.ImageUrl" alt="@Model.ImageUrl" style="height:300px; width:400px;" />
+    </div>
+    <div class="col-6">
+        <h3>Thời gian khởi hành: @Model.GioKhoiHanh</h3>
+        <h3>Thời gian kết thúc dự kiến: @Model.GioDenDuKien</h3>
+        <h5>Mã xe: @Model.MaXe</h5>
+        <h5>Số ghế: @Model.SoGhe</h5>
+        <h5>Biển số xe: @Model.BienSX</h5>
+        <h5>Tên tài xế: @Model.TenTX</h5>
+        <h5>Mã chuyến xe: @Model.MaCX</h5>
+        <h5>Điểm đến: @Model.ChuyenXe.DiemDen</h5>
+        <form class="d-flex" action="/khachhang/them">
+            <button class="btn btn-outline-primary" type="submit">Đặt vé</button>
+        </form>
+    </div>
+
+</div>
+<br />
+<a href="@Url.Action("Index","Xe")">Trở về trang trước</a>

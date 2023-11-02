@@ -1,0 +1,42 @@
+﻿@model Web_QuanLyDichVuXeKhach.Models.ChuyenXe
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<h2>Edit</h2>
+
+<form action="/chuyenxe/edit/@Model.MaCX" method="post">
+    <input type="hidden" name="MaCX" value="@Model.MaCX" />
+    <div class="row">
+        <div class="col-md-6">
+            <label for="DiemDi">Điểm đi</label>
+            <input type="text" class="form-control" id="DiemDi" name="DiemDi" placeholder="DiemDi" value="@Model.DiemDi" />
+        </div>
+        <div class="col-md-6">
+            <label for="DiemDen">Điểm đến</label>
+            <input type="text" class="form-control" id="DiemDen" name="DiemDen" placeholder="DiemDen" value="@Model.DiemDen" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <label for="NgayDi">Ngày đi</label>
+            <input type="datetime" class="form-control" id="NgayDi" name="NgayDi" placeholder="NgayDi" value="@Model.NgayDi" />
+        </div>
+        <div class="col-md-6">
+            <label for="GiaVe">Giá vé</label>
+            <input type="number" class="form-control" id="GiaVe" name="GiaVe" placeholder="GiaVe" value="@Model.GiaVe" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <label for="ImageUrl">ImageUrl</label>
+            <input type="file" class="form-control" id="ImageUrl" name="ImageUrl" placeholder="ImageUrl" value="@Model.ImageUrl" />
+        </div>
+    </div>
+    <button type="submit" class="btn btn-outline-primary">Save</button>
+    <a href="/ChuyenXe/index" class="btn btn-outline-danger">Cancel</a>
+</form>
+

@@ -1,0 +1,24 @@
+﻿@model List<Web_QuanLyDichVuXeKhach.Models.ChuyenXe>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+<a href="/chuyenxe/create">Thêm</a>
+<div class="row row-cols-1 row-cols-md-4 g-3">
+        @foreach (var item in Model)
+        {
+            <div class="col">
+                <a href="/chuyenxe/detail/@item.MaCX"><img src="~/image/@item.ImageUrl" class="card-img-top" alt="@item.DiemDen" width="400px" height="180px"/></a>
+                <div class="card-body">
+                    <h5 class="card-title">Địa điểm đi: @item.DiemDi</h5>
+                    <h5 class="card-title">Địa điểm đén: @item.DiemDen</h5>
+                    <strong><p class="card-text">Giá vé: @item.GiaVe đ</p></strong>
+                    <p class="card-text">
+                        Ngày đi: @item.NgayDi<br />
+                        Mã chuyến xe: @item.MaCX
+                    </p>
+                    <p><a href="/chuyenxe/edit/@item.MaCX">Edit | </a><a href="/chuyenxe/delete/@item.MaCX">Delete</a></p>
+                </div>
+            </div>
+        }
+    </div>

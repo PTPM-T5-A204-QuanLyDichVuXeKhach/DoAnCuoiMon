@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "create";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<h2>create</h2>
+
+<form action="/chuyenxe/create" method="post">
+    <div class="row">
+        <div class="col-md-6">
+            <label for="DiemDi">Điểm đi</label>
+            <input type="text" class="form-control" id="DiemDi" name="DiemDi" placeholder="DiemDi" />
+        </div>
+        <div class="col-md-6">
+            <label for="DiemDen">Điểm đến</label>
+            <input type="text" class="form-control" id="DiemDen" name="DiemDen" placeholder="DiemDen" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <label for="NgayDi">Ngày đi</label>
+            <input type="datetime" class="form-control" id="NgayDi" name="NgayDi" placeholder="NgayDi" />
+        </div>
+        <div class="col-md-6">
+            <label for="GiaVe">Giá vé</label>
+            <input type="number" class="form-control" id="GiaVe" name="GiaVe" placeholder="GiaVe" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <label for="ImageUrl">ImageUrl</label>
+            <input type="file" class="form-control" id="ImageUrl" name="ImageUrl" placeholder="ImageUrl" />
+        </div>
+    </div>
+    <button type="submit" class="btn btn-outline-primary">Save</button>
+    <a href="/chuyenxe/index" class="btn btn-outline-danger">Cancel</a>
+</form>
+

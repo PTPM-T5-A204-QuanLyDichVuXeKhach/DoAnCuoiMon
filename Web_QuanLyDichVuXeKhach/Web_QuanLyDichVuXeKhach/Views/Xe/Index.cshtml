@@ -1,0 +1,31 @@
+﻿@model List<Web_QuanLyDichVuXeKhach.Models.Xe>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<h2>Xe</h2>
+
+<div class="row row-cols-1 row-cols-md-4 g-3">
+    @foreach (var item in Model)
+    {
+        <div class="col">
+            <a href="/xe/detail/@item.MaXe"><img src="~/image/@item.ImageUrl" class="card-img-top" alt="@item.MaXe" width="400px" height="180px" /></a>
+            <div class="card-body">
+                <h6 class="card-title">Địa khởi hành: @item.GioKhoiHanh</h6>
+                <h6 class="card-title">Địa đến: @item.GioDenDuKien</h6>
+                <p class="card-text">
+                    Tên tài xế: @item.TenTX<br />
+                    Biển số xe: @item.BienSX<br />
+                    Số ghế: @item.SoGhe<br />
+                    Mã xe: @item.MaXe<br />
+                    Mã chuyến xe: @item.MaCX <br />
+                    Điểm đến: @item.ChuyenXe.DiemDen
+                </p>
+            </div>
+        </div>
+    }
+</div>
+
+
+
